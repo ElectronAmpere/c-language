@@ -1,2 +1,1 @@
-# programming
-For learning programming languages
+# C Programming Language
