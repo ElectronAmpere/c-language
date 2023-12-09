@@ -20,9 +20,7 @@
 int main()
 {
     // The text given within the "<text>" is called a string literal
-    printf("Hello, ");
-    printf("World");
-    printf("\n"); // The "\n" is an escape sequence for newline insertion
+    printf("Hello, World\n"); // The "\n" is an escape sequence for newline insertion
     
     /**/
     return (0);

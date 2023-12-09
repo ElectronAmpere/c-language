@@ -1,11 +1,9 @@
 /**
  * @file ex_1_2_hello_world.c
  * @author your name (you@domain.com)
- * @brief Exercise 1-2:
- *                  Experiment to find out what happens when prints's argument string contains \c, 
- *                  where c is some character not listed above.
+ * @brief 
  * @version 0.1
- * @date 2023-07-08
+ * @date 2023-12-09
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -13,10 +11,17 @@
 #include <stdio.h>
 
 /**
- * @brief The main function
+ * @brief main function program
  * 
+ * @return int 
  */
-void main()
+int main()
 {
-    printf("Hello, World\c");
+    // The text given within the "<text>" is called a string literal
+    printf("Hello, ");
+    printf("World");
+    printf("\n"); // The "\n" is an escape sequence for newline insertion
+    
+    /**/
+    return (0);
 }
