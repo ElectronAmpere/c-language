@@ -26,6 +26,9 @@ int main()
     step = 20; // Increments with
 
     fahr = lower;   //Set to start value
+
+    /* Title of the program */
+    printf("Fahrenheit-Celcius Table\n");
     while (fahr <= upper) // Checked till the end
     {
         celcius = 5 * (fahr - 32) / 9; // Conversion formula C=(5/9)(F-32) 
