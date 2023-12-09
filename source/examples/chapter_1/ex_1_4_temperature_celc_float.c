@@ -1,5 +1,5 @@
 /**
- * @file ex_1_4_temperature_reversed_float.c
+ * @file ex_1_4_temperature_celc_float.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
