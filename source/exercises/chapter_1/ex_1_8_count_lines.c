@@ -1,7 +1,7 @@
 /**
- * @file ex_1_5_count_lines.c
+ * @file ex_1_8_count_lines.c
  * @author your name (you@domain.com)
- * @brief Ex.1.5 Write a program to count blanks, tabs, and newlines.
+ * @brief 
  * @version 0.1
  * @date 2023-12-10
  * 
@@ -12,19 +12,21 @@
 
 int main()
 {
-    int c, nl, blanks, tabs;
+    int c, lines, blanks, tabs;
+
+    lines = 0, blanks = 0, tabs = 0;
 
     while((c = getchar()) != EOF)
     {
         if (c == '\n')
-            ++nl;
+            ++lines;
         if (c == ' ')
             ++blanks;
         if (c == '\t')
             ++tabs;
     }
 
-    printf("Lines: %d\nBlanks: %d\nTabs = %d\n",nl, blanks, tabs);
+    printf("\nLines: %d\nBlanks: %d\nTabs: %d\n",lines, blanks, tabs);
 
     return (0);
 }
