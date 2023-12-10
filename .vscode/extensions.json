@@ -16,6 +16,7 @@
         "davidanson.vscode-markdownlint",
         "ms-python.vscode-pylance",
         "ms-python.python",
-        "tomoki1207.pdf"
+        "tomoki1207.pdf",
+        "twxs.cmake"
     ]
 }
