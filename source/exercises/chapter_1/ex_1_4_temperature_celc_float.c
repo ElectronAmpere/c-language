@@ -1,7 +1,7 @@
 /**
  * @file ex_1_4_temperature_celc_float.c
  * @author your name (you@domain.com)
- * @brief 
+ * @brief Exercise 1-4. Write a program to print the corresponding Celsius to Fahrenheit table. 
  * @version 0.1
  * @date 2023-12-09
  * 

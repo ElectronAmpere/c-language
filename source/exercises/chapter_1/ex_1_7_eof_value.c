@@ -1,7 +1,7 @@
 /**
  * @file ex_1_7_eof_value.c
  * @author your name (you@domain.com)
- * @brief 
+ * @brief Exercise 1-7. Write a program to print the value of EOF.
  * @version 0.1
  * @date 2023-12-09
  * 

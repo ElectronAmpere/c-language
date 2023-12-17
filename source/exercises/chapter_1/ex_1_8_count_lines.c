@@ -1,7 +1,7 @@
 /**
  * @file ex_1_8_count_lines.c
  * @author your name (you@domain.com)
- * @brief 
+ * @brief Exercise 1-8. Write a program to count blanks, tabs, and newlines. 
  * @version 0.1
  * @date 2023-12-10
  * 
