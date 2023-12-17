@@ -14,14 +14,13 @@ int main()
 {
     float lower, upper, step;
     float celcius, fahr;
-    char *ptr_title = "Celcius-Fahrenheit Table\n";
 
     lower = 0.0,
     upper = 300.0,
     step = 20.0;
 
     celcius = lower;
-    printf("%s", ptr_title);
+    printf("%s", "Celcius-Fahrenheit Table\n");
 
     while(celcius <= upper){
         fahr = (9.0 * celcius) / 5.0 + 32.0;
