@@ -15,7 +15,7 @@
 
 int main()
 {
-    int i, c, characters[MAX_CHARACTERS + MAX_CHARACTERS], char_length[MAX_CHARACTERS];
+    int i, j, c, characters[MAX_CHARACTERS + MAX_CHARACTERS], char_length[MAX_CHARACTERS];
 
     for (i = 0; i < MAX_CHARACTERS + MAX_CHARACTERS; ++i)
         if (i < MAX_CHARACTERS)  
@@ -34,9 +34,17 @@ int main()
             else
                 ;
     
-    printf("Character Frequency\n");
+    printf("Character Frequency Histogram \n");
+    printf("-----------------------------------\n");
     for(i = 0; i < MAX_CHARACTERS; ++i)
-        printf("%c, %c: %d\n",characters[i], characters[i + MAX_CHARACTERS], char_length[i]);
+    {
+        printf("%c, %c: ",characters[i], characters[i + MAX_CHARACTERS]);
+        for (j = 0; j < char_length[i]; ++j)
+            printf("*");
+        
+        printf("\n");
+    }
+    printf("-----------------------------------\n");
 
     return (0);
 }
