@@ -33,7 +33,7 @@ int main()
 
     /** Printing Histograms */
     printf("\n\tHistogram - Horizontal Left\n\n");
-    
+    printf("-----------------------------------\n");
     printf("Blanks\t|");
     for (i = 0; i < nwhites; ++i)
         printf("*");
@@ -51,9 +51,10 @@ int main()
             printf("*");
         printf("\n");
     }
+    printf("-----------------------------------\n");
 
     printf("\n\tHistogram - Horizontal Right\n\n");
-    
+    printf("-----------------------------------\n");
     for (i = 0; i < DIGITS_ARRAY_LENGTH; ++i)
         if (max < ndigits[i])
             max = ndigits[i];
@@ -83,6 +84,7 @@ int main()
             printf("*");
         printf("| %d\n",i);
     }
+    printf("-----------------------------------\n");
 
     return (0);
 }

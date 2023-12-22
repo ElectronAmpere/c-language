@@ -12,10 +12,40 @@
 
 #include <stdio.h>
 
-#define MAX_WORD_LENGTH (100)
+#define MAX_WORDS (100)
+#define IN (0)
+#define OUT (1)
 
 int main()
 {
-    
+    int c, i, nw, j, state, word_length[MAX_WORDS];
+
+    state = OUT;
+    for (i = 0; i < MAX_WORDS; ++i)
+        word_length[i] = 0;
+    i = nw = 0;
+
+    while((c = getchar()) != EOF)
+    {
+        if (c == '\n' || c == ' ' || c == '\t')
+            state = OUT;
+        else if (state == OUT)
+            state = IN,
+            ++nw;
+        else
+            ++word_length[nw-1];
+    }
+
+    /** Print Histogram */
+    printf("-----------------------------------\n");
+    for (i = 0; i < MAX_WORDS; ++i)
+    { 
+        printf("%d: ", i+1);
+        for (j = 0; j < word_length[i]; ++j)
+            printf("*");
+        printf("\n");
+    }
+    printf("-----------------------------------\n");
+
     return(0);
 }
