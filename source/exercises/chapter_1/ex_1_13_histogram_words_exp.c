@@ -13,6 +13,7 @@
 
 #define DIGITS_ARRAY_LENGTH (10)
 #define BLANKS_OTHERS_LENGTH (2)
+#define HISTOGRAM_LENGTH (BLANKS_OTHERS_LENGTH + DIGITS_ARRAY_LENGTH)
 
 int main()
 {
@@ -86,5 +87,35 @@ int main()
     }
     printf("-----------------------------------\n");
 
+    printf("\n\n");
+    /** Vertical Histogram */
+    for (i = 0; i < max; ++i)
+    {
+        if (nwhites + 1 >= max - i + 1)
+            printf("    * ");
+        else
+            printf("      ");
+        
+        if (nothers + 1 >= max - i + 1)
+            printf("      *   ");
+        else
+            printf("          ");
+
+        for (j = 0; j < DIGITS_ARRAY_LENGTH; ++j)
+            if (ndigits[j] + 1 >= max - i + 1)
+                printf("  * ");
+            else
+                printf("    ");
+        printf("\n");
+    }
+
+    printf("\n");
+    printf(" Blanks ");
+    printf(" Others ");
+    for (i = 0; i < DIGITS_ARRAY_LENGTH; ++i)
+        printf(" %2d ", i);
+
+    printf("\n\n");
+        
     return (0);
 }
