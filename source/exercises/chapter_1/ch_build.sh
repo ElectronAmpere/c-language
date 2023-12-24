@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/sh bash
 set -xe
-read FileName
+read -p "Enter the FileName: " FileName
 
 clang -Wall -Wextra -o $FileName $FileName.c

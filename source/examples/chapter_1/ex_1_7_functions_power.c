@@ -10,6 +10,7 @@
  */
 #include <stdio.h>
 
+/** Function Prototype */
 int power (int m, int n);
 
 
