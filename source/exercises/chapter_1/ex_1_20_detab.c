@@ -33,29 +33,31 @@ int main()
 
 int exp_getline(char line[], int maxline)
 {
-    int c, length, tabstops,i;
+    int c, length, tabstops;
 
     tabstops = TAB_STOPS;
 
-    for (length = 0; length < maxline && (c = getchar()) != EOF && c != '\n'; ++i)
+    for (length = 0; length < maxline && (c = getchar()) != EOF && c != '\n'; ++length)
     {
         if (c == '\t')
         {
-            for (i = 0; i < tabstops && (length + i) < maxline; ++i)
-                line[length + i] = ' ',
-            
-            tabstops = 0;
+            while(tabstops > 0 && length < maxline)
+                line[length] = ' ',
+                --tabstops,
+                ++length;
+            --length;
         }
         else
         {
-            line[length] = c;   
+            line[length] = c; 
         }
 
-        if (tabstops == 0)
+        if (tabstops < 1)
             tabstops = TAB_STOPS;
-        else
-            --tabstops;
+
+        --tabstops;
     }
+
     if (c == '\n')
         line[length] = c,
         ++length;
