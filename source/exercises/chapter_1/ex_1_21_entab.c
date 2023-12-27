@@ -44,9 +44,7 @@ int exp_getline(char line[], int maxline)
         --tabstops;
         
         if (c == ' ')
-        {
             ++spaces;
-        }
         else
             line[length] = c,
             spaces = 0;
