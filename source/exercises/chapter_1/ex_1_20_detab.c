@@ -25,7 +25,7 @@ int main()
     char line[MAXLINE_TOTAL]; /** current input line */
     int length; /** length of the line */
 
-    while((length = exp_getline(line, MAXLINE_TOTAL)) > 0)
+    while((length = exp_getline(line, MAXLINE)) > 0)
         printf("%s", line);
 
     return 0;
@@ -39,31 +39,30 @@ int exp_getline(char line[], int maxline)
 
     for (length = 0; length < maxline && (c = getchar()) != EOF && c != '\n'; ++length)
     {
+        --tabstops;
+        
         if (c == '\t')
         {
-            while(tabstops > 0 && length < maxline)
+            while(tabstops >= 0 && length < maxline)        
                 line[length] = ' ',
                 --tabstops,
                 ++length;
+            
             --length;
         }
         else
-        {
-            line[length] = c; 
-        }
-
+            line[length] = c;
+        
         if (tabstops < 1)
             tabstops = TAB_STOPS;
-
-        --tabstops;
     }
 
     if (c == '\n')
         line[length] = c,
         ++length;
-    
-    line[length] = '\0',
+
+    line[length] = '\0';
     ++length;
 
-    return (length + MAXLINE_ENDINGS);
+    return (length - MAXLINE_ENDINGS);
 }
