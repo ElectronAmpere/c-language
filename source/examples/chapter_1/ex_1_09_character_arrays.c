@@ -1,9 +1,9 @@
 /**
- * @file ex_1_9_character_arrays.c
+ * @file ex_1_09_character_arrays.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-12-24
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 

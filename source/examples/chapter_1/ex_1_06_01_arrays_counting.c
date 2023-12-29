@@ -1,9 +1,9 @@
 /**
- * @file ex_1_6_1_arrays_counting.c
+ * @file ex_1_06_01_arrays_counting.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-12-19
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 

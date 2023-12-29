@@ -1,9 +1,9 @@
 /**
- * @file ex_1_3_temeperature_float.c
+ * @file ex_1_02_temperature_float.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-12-08
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 

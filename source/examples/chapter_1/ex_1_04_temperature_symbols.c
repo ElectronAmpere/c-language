@@ -1,9 +1,9 @@
 /**
- * @file ex_1_4_temperature_symbols.c
+ * @file ex_1_04_temperature_symbols.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-12-09
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 

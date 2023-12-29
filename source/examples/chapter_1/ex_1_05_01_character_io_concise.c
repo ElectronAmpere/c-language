@@ -1,9 +1,9 @@
 /**
- * @file ex_1_5_line_counting.c
+ * @file ex_1_05_01_character_io_concise.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-12-09
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -12,15 +12,10 @@
 
 int main()
 {
-    int c, nl;
-
-    nl = 0;
-
-    while((c = getchar()) != EOF)
-        if (c == '\n')
-            ++nl;
+    int c;
     
-    printf("%d\n", nl);
-
-    return (0);
+    while((c = getchar()) != EOF)
+        putchar(c);
+    
+    return(0);
 }

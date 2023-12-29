@@ -1,9 +1,9 @@
 /**
- * @file ex_1_3_temperature.c
+ * @file ex_1_02_temperature.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-11-25
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 

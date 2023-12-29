@@ -1,9 +1,9 @@
 /**
- * @file ex_1_7_functions_power_oldstyle.c
+ * @file ex_1_07_functions_power_oldstyle.c
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2023-12-24
+ * @date 2023-12-29
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 /**
- * @brief   ex_1_7_functions_power_oldstyle.c:13:5: warning: a function definition 
+ * @brief   ex_1_07_functions_power_oldstyle.c:13:5: warning: a function definition 
  *          without a prototype is deprecated in all versions of C and is not 
  *          supported in C2x [-Wdeprecated-non-prototype]
  *          int power(base, n)
