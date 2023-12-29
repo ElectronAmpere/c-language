@@ -1,5 +1,5 @@
 /**
- * @file ex_1_4_temperature_celc_float.c
+ * @file ex_1_04_temperature_celc.c
  * @author your name (you@domain.com)
  * @brief Exercise 1-4. Write a program to print the corresponding Celsius to Fahrenheit table. 
  * @version 0.1
@@ -12,21 +12,20 @@
 
 int main()
 {
-    float lower, upper, step;
-    float celcius, fahr;
+    int lower, upper, step;
+    int fahr, celcius;
 
-    lower = 0.0,
-    upper = 300.0,
-    step = 20.0;
+    lower = 0,
+    upper = 300,
+    step = 20;
 
     celcius = lower;
-    printf("%s", "Celcius-Fahrenheit Table\n");
 
+    printf("Celcius-Fahrenheit Table\n");
     while(celcius <= upper){
-        fahr = (9.0 * celcius) / 5.0 + 32.0;
-        printf("%3.1f %6.1f\n", celcius, fahr);
-        celcius += step;
+        fahr = (9 * celcius)/ 5 + 32;
+        printf("%d\t %d\n",celcius, fahr);
+        celcius += step;       
     }
-
     return (0);
 }

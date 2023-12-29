@@ -1,5 +1,5 @@
 /**
- * @file ex_1_3_temperature.c
+ * @file ex_1_03_temperature.c
  * @author your name (you@domain.com)
  * @brief Exercise 1-3. Modify the temperature conversion program to print a heading above the table. 
  * @version 0.1

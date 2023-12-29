@@ -1,5 +1,5 @@
 /**
- * @file ex_1_6_verify_getchar.c
+ * @file ex_1_06_verify_getchar.c
  * @author your name (you@domain.com)
  * @brief Exercsise 1-6. Verify that the expression getchar() != EOF is 0 or 1.
  * @version 0.1

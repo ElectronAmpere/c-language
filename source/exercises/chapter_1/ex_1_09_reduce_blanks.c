@@ -1,5 +1,5 @@
 /**
- * @file ex_1_9_reduce_blanks.c
+ * @file ex_1_09_reduce_blanks.c
  * @author your name (you@domain.com)
  * @brief Exercise 1-9. Write a program to copy its input to its output, replacing each string of one or
           more blanks by a single blank

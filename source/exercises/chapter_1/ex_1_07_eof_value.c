@@ -1,5 +1,5 @@
 /**
- * @file ex_1_7_eof_value.c
+ * @file ex_1_07_eof_value.c
  * @author your name (you@domain.com)
  * @brief Exercise 1-7. Write a program to print the value of EOF.
  * @version 0.1
