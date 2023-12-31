@@ -44,7 +44,7 @@ int exp_getline(char line[], int maxline)
         if (c == '\t')
         {
             while(tabstops >= 0 && length < maxline)        
-                line[length] = ' ',
+                line[length] = '-',
                 --tabstops,
                 ++length;
             
