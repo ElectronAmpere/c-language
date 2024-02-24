@@ -13,7 +13,8 @@
  */
 #include <stdio.h>
 
-#define TAB_STOPS       (4) /** Spaces to be replaced for Tabs */
+/**TODO: Need to check why the standard length of tab stops is 8 */
+#define TAB_STOPS       (8) /** Spaces to be replaced for Tabs, Also this size 8 seems to be the standard. */
 #define MAXLINE         (1000) /** Maximum line length */
 #define MAXLINE_ENDINGS (2) /** Appended line endings length */
 #define MAXLINE_TOTAL   (MAXLINE + MAXLINE_ENDINGS) /** Actual maximum line length */

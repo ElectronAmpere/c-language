@@ -13,7 +13,7 @@
  */
 #include <stdio.h>
 
-#define TAB_STOPS       (4) /** Spaces to be replaced for Tabs */
+#define TAB_STOPS       (8) /** Spaces to be replaced for Tabs */
 #define SPACES_TO_TAB   (3) /** Minimum number of spaces to be replaced as a tab */
 #define MAXLINE         (1000) /** Maximum line length */
 #define MAXLINE_ENDINGS (2) /** Appended line endings length */
@@ -44,15 +44,15 @@ int exp_getline(char line[], int maxline)
         --tabstops;
         
         if (c == ' ')
+        {
             ++spaces;
-        else
-            line[length] = c,
-            spaces = 0;
 
-        if (spaces >= TAB_STOPS && tabstops >= SPACES_TO_TAB)
-            line[length] = '\t',
-            spaces = spaces - TAB_STOPS,
-            tabstops = 0;
+            if(tabstops <= 0 && length < maxline && spaces > 0)        
+                line[length] = '\t',
+                spaces = 0;
+            else
+                ;
+        }
         else
             line[length] = c;
         
