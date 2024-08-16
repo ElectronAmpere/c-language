@@ -24,7 +24,7 @@ int main()
   const char msg[] = "warning: ";
 
   printf("var_months = %d\n", var_months+1);
-  printf("Constant message : %s", msg);
+  printf("Constant message : %s\n", msg);
   
   return (0);
 }
