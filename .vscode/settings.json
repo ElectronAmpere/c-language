@@ -1,9 +1,0 @@
-{
-    "C_Cpp.default.compilerPath": "/usr/bin/clang",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorStyle": "line",
-    "cmake.sourceDirectory": "/media/vrr/Data/Programming/c-language/make",
-    "files.associations": {
-        "stdio.h": "c"
-    },
-}
